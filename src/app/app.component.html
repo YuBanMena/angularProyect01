@@ -9,6 +9,17 @@
 <div>
   <p>Nombre del Programador: {{nombre}}</p>
   <p>Edad: {{edad}}</p>
+
+  <p *ngIf="edad>=18; else menor">Es Mayor de Edad</p>
+  <ng-template #menor>Es Menor de Edad</ng-template>
+  <table border="1">
+    <tr>
+      <td>Sueldos</td>
+    </tr>
+    <tr *ngFor="let m of materias">
+      <td>{{m}}</td>
+    </tr>
+  </table>
   <p>Frameworks Favoritos: {{frameworks[0]}}, {{frameworks[1]}}, {{frameworks[2]}} y {{frameworks[3]}}</p>
   <p>En los últimos 3 meses ha ganado: {{ultimos3Sueldos()}}</p>
   <p>Estátus: {{esActivo()}}</p>

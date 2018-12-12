@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'YuBan Proyect';
   nombre = 'Yu Ban Mena Zabala';
-  edad = 22;
+  edad = 12;
   email = 'yubanmenazabala@outlook.com';
   frameworks = ['laravel', 'grails', 'angular', 'react'];
 
